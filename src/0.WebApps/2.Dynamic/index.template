@@ -1,0 +1,4 @@
+import './header.template'
+    -> name: 'Main page'
+
+import './footer.template'
