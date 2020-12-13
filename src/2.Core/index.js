@@ -1,10 +1,3 @@
-/**
- * - fs
- * - path
- */
-
-const fs = require("fs");
-
-fs.readFile("./text.txt", "utf8", (err, data) => {
-  console.log(data);
-});
+const fs = require('fs');
+fs.writeFileSync("text.txt", "Hey there!");
+console.log("The file was saved!");

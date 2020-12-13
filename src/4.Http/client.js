@@ -1,4 +1,4 @@
-const { request } = require("http");
+const { request } = require('http');
 
 (function () {
   // setInterval(function () {
@@ -10,7 +10,7 @@ const { request } = require("http");
   const opts = { host: "localhost", port: 8080, method: "GET", path: "/" };
   request(opts, function (response) {
     console.log("Request started");
-    
+
     response.on("data", function (d) {
       data += d;
       console.log(`Receiving data: ${d}`);
