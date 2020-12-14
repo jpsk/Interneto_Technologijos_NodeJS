@@ -1,9 +1,9 @@
-const { request } = require('http');
+const { request } = require("http");
 
-(function () {
-  // setInterval(function () {
-  //   console.log(`tick: ${Date.now()}`);
-  // }, 250);
+function makeRequest() {
+  setInterval(function () {
+    console.log(`tick: ${Date.now()}`);
+  }, 250);
 
   let data = "";
 
@@ -19,4 +19,6 @@ const { request } = require('http');
       console.log(`Request ended successfully: ${data}`);
     });
   }).end();
-})();
+}
+
+makeRequest();

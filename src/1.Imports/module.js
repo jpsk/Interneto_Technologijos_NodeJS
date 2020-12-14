@@ -1,13 +1,3 @@
-// export module
-
-let count = 0;
-function workForALongTime(time){
-    const start = new Date().getTime();
-    while(new Date().getTime() < start + time){}
+module.exports = function() {
+    console.log('I am a function');
 }
-function countSeconds(){
-    workForALongTime(2000);
-    count++;
-    console.log('count' + count);
-}
-setInterval(countSeconds, 1000);
