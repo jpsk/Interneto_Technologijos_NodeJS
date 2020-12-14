@@ -2,9 +2,14 @@ const crypto = require("crypto");
 const start = Date.now();
 
 function logHashTime() {
-  crypto.pbkdf2("a", "b", 200000, 512, "sha512", () => {
-    console.log("Hash: ", Date.now() - start);
-  });
+  // Sync
+  crypto.pbkdf2Sync("a", "b", 200000, 512, "sha512");
+  console.log("Hash: ", Date.now() - start);
+
+  // Async
+  // crypto.pbkdf2("a", "b", 200000, 512, "sha512", () => {
+  //   console.log("Hash: ", Date.now() - start);
+  // });
 }
 
 logHashTime();
@@ -12,7 +17,7 @@ logHashTime();
 logHashTime();
 logHashTime();
 
-
+console.log('Run');
 
 
 
