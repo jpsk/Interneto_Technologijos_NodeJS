@@ -6,7 +6,7 @@ function logHashTime() {
   crypto.pbkdf2Sync("a", "b", 200000, 512, "sha512");
   console.log("Hash: ", Date.now() - start);
 
-  // Async
+  // // Async
   // crypto.pbkdf2("a", "b", 200000, 512, "sha512", () => {
   //   console.log("Hash: ", Date.now() - start);
   // });
@@ -39,12 +39,36 @@ console.log('Run');
 
 
 /**
+
+
+
+
            t(s)
             ^
          3  |
          2  |                      [f]  <------- (In queue)
          1  |  [f]  [f]  [f]  [f]
             --------------------------------> calls(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  */
 
 
