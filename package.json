@@ -1,8 +1,7 @@
 {
-  "name": "Interneto_Technologijos_NodeJS_2020",
+  "name": "interneto-technologijos-node-js-2020",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
