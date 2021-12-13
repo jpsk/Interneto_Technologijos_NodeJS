@@ -16,7 +16,7 @@ function logHashTime(async = false) {
 }
 
 for (let i = 0; i < 10; i++) {
-  logHashTime(false);
+  logHashTime(true);
 }
 
 console.log("Run");
